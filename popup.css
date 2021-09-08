@@ -1,0 +1,24 @@
+body {
+  margin: 10px;
+  background-color: black;
+  font-size: medium;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#text-link {
+  margin-top: 7px;
+  color:white; 
+  white-space:nowrap; 
+  line-height:130%;
+  opacity: 0;
+  transition: opacity .7s ease-in-out;
+}
+
+#this-icon {
+  max-width: 40px;
+  transition: transform .7s ease-in-out;
+}

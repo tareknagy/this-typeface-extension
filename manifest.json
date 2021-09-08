@@ -1,0 +1,29 @@
+{
+    "name": "This Typeface",
+    "description": "Load your desktop fonts!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background" : {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "scripting", "fontSettings"],
+    "host_permissions": [
+        "http://*.thistypeface.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*.thistypeface.com/*"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/logo_block_16.png",
+            "32": "/images/logo_block_32.png",
+            "48": "/images/logo_block_48.png",
+            "128": "/images/logo_block_128.png"
+        }
+    }
+
+}
