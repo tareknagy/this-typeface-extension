@@ -8,11 +8,15 @@
     },
     "permissions": ["storage", "scripting", "fontSettings"],
     "host_permissions": [
-        "http://*.thistypeface.com/"
+        "http://*.thistypeface.com/",
+        "http://localhost:3000/*"
     ],
     "content_scripts": [
         {
-            "matches": ["http://*.thistypeface.com/*"],
+            "matches": [
+                "http://*.thistypeface.com/*",
+                "http://localhost:3000/"
+            ],
             "js": ["content-script.js"]
         }
     ],
